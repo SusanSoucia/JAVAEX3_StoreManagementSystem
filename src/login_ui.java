@@ -57,60 +57,46 @@ public class login_ui extends JFrame{
         mainPanel.add(login, gbc);
 
         add(mainPanel);
+        setIconImage(new ImageIcon("src\\resources\\登录.png").getImage());
         setVisible(true);
     
     }
 
-    private class loginListener implements ActionListener{
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        // TODO 连接数据库
-        db = new dbHelper();
-        db.connectDB();
-        db.setID(inputID.getText().trim());
-        String ps = new String(password.getPassword());
-        db.setPass(ps);
-        if (db.login()) {
-            System.out.println("登录成功");
-            /* 
-            Loading turning = new Loading(login_ui.this);
-            turning.setVisible(true);
-            turning.dispose();
-            */
-            dispose(); // 关闭登录窗口
-            new MainWindow_ui().setVisible(true); // 假设 MainWindow 是主界面
-        } else {
-            JOptionPane.showMessageDialog(
-                login_ui.this,
-                "请重新输入帐号与密码",
-                "登录失败",
-                JOptionPane.ERROR_MESSAGE
-            );
+    private class loginListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            // TODO 连接数据库
+            db = new dbHelper();
+            db.connectDB();
+            db.setID(inputID.getText().trim());
+            String ps = new String(password.getPassword());
+            db.setPass(ps);
+            if (db.login()) {
+                System.out.println("登录成功");
+                /* 
+                Loading turning = new Loading(login_ui.this);
+                turning.setVisible(true);
+                turning.dispose();
+                */
+                dispose(); // 关闭登录窗口
+                new MainWindow_ui().setVisible(true); // 假设 MainWindow 是主界面
+            } else {
+                JOptionPane.showMessageDialog(
+                    login_ui.this,
+                    "请重新输入帐号与密码",
+                    "登录失败",
+                    JOptionPane.ERROR_MESSAGE
+                );
+            
+            
+                }
+    }
         
         
-            }
-        }
+            
 
-        private class Loading extends  JDialog{
-            public Loading(JFrame parent) {
-                super(parent, true); // 模态对话框
-                setUndecorated(true); // 隐藏标题栏
-                setSize(200, 200);
-                setLocationRelativeTo(parent); // 居中显示
-                
-                // 加载 GIF 资源
-                ImageIcon gifIcon = new ImageIcon("D:\\VSCODE\\java\\stroeSystem\\loading.gif");
-                JLabel gifLabel = new JLabel(gifIcon);
-                gifLabel.setHorizontalAlignment(SwingConstants.CENTER);
-                
-                // 透明背景
-                getContentPane().setBackground(new Color(0, 0, 0, 0));
-                setBackground(new Color(0, 0, 0, 0));
-                
-                add(gifLabel);
-            }
         
         }
         
     }
-}
+

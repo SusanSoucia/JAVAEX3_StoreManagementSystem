@@ -176,7 +176,13 @@ public class dbHelper {
     }
 
     public void byeDB(){
-        //退出数据库登录状态
+        try {
+            if (conn != null && !conn.isClosed()) {
+                conn.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 

@@ -26,6 +26,7 @@ public class MainWindow_ui extends JFrame {
     tableModel tb;
 
     public MainWindow_ui(){
+
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(600, 400);
         db = new dbHelper();
@@ -65,6 +66,8 @@ public class MainWindow_ui extends JFrame {
         
         setJMenuBar(bar);
         add(mainPanel);
+        setTitle("仓库管理主界面");
+        setIconImage(new ImageIcon("D:\\VSCODE\\java\\stroeSystem\\src\\resources\\仓库管理.png").getImage());
         setVisible(true);
 
     }
@@ -236,12 +239,12 @@ private class tableModel extends AbstractTableModel{
                 updateSuccess = db.updateData(data.getId(), "itemname", value);
                 break;
 
-                case 3:
+                case 2:
                 data.setPrice(Integer.parseInt(value.toString()));
                 updateSuccess = db.updateData(data.getId(), "itemprice", value);
                 break;
 
-                case 2:
+                case 3:
                 data.setAmt(Integer.parseInt(value.toString()));
                 updateSuccess = db.updateData(data.getId(), "itemamt", value);
                 break;

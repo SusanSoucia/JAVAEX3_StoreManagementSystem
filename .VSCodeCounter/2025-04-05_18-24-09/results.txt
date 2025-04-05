@@ -1,0 +1,36 @@
+Date : 2025-04-05 18:24:09
+Directory : d:\VSCODE\java\stroeSystem
+Total : 9 files,  615 codes, 98 comments, 131 blanks, all 844 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Java     |          8 |        605 |         98 |        122 |        825 |
+| Markdown |          1 |         10 |          0 |          9 |         19 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                              | files      | code       | comment    | blank      | total      |
++---------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                 |          9 |        615 |         98 |        131 |        844 |
+| . (Files)                                         |          1 |         10 |          0 |          9 |         19 |
+| src                                               |          8 |        605 |         98 |        122 |        825 |
++---------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                          | language | code       | comment    | blank      | total      |
++---------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\VSCODE\java\stroeSystem\README.md              | Markdown |         10 |          0 |          9 |         19 |
+| d:\VSCODE\java\stroeSystem\src\App.java           | Java     |          5 |          0 |          2 |          7 |
+| d:\VSCODE\java\stroeSystem\src\DataVO.java        | Java     |         20 |         11 |          4 |         35 |
+| d:\VSCODE\java\stroeSystem\src\FindFC.java        | Java     |         75 |         10 |         15 |        100 |
+| d:\VSCODE\java\stroeSystem\src\InsertFC.java      | Java     |         65 |          9 |         15 |         89 |
+| d:\VSCODE\java\stroeSystem\src\Loading.java       | Java     |         28 |         11 |          8 |         47 |
+| d:\VSCODE\java\stroeSystem\src\MainWindow_ui.java | Java     |        200 |         25 |         35 |        260 |
+| d:\VSCODE\java\stroeSystem\src\dbHelper.java      | Java     |        146 |         14 |         24 |        184 |
+| d:\VSCODE\java\stroeSystem\src\login_ui.java      | Java     |         66 |         18 |         19 |        103 |
+| Total                                             |          |        615 |         98 |        131 |        844 |
++---------------------------------------------------+----------+------------+------------+------------+------------+
